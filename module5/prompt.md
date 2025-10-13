@@ -2,7 +2,7 @@
 
 **Here are the list of observations and conclusions based from Jupyter Notebook**
 
-Jupyter Notebook: [prompt.ipynb][https://github.com/shahcj/uc_ml_ai_assignments/blob/main/module5/prompt.ipynb]
+Jupyter Notebook: [prompt.ipynb](https://github.com/shahcj/uc_ml_ai_assignments/blob/main/module5/prompt.ipynb)
 
 **Observations:**
 * The data consists of 12684 rows and 26 columns. Based on the value counts observed, we had to make following code cleaning:
