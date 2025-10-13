@@ -5,7 +5,7 @@
 Jupyter Notebook: [prompt.ipynb](https://github.com/shahcj/uc_ml_ai_assignments/blob/main/module5/prompt.ipynb)
 
 **Observations:**
-* The data consists of 12684 rows and 26 columns. Based on the value counts observed, we had to make following code cleaning:
+* The data consists of 12,684 rows and 26 columns. Based on the value counts observed, we had to make following code cleaning:
     * Rename passanger column to passenger using *rename* function.
     * Convert age column to integer using *astype(int)*. Updated 2 values **below21** to **20** and **50plus** to **50**
     * We dropped 74 duplicates rows using *drop_duplicates()* function
