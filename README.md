@@ -3,7 +3,7 @@ As a performance engineer, I want to build a predictive model that estimates sys
 
 This project will use Linear Regression (and possibly other regression methods) to model the relationship between API usage patterns and resulting resource consumption. Given input data describing the percentage load distribution across different APIs, the model will predict the expected resource usage. This will help in capacity planning and reduce the need for repeated, costly performance testing scenarios.*
 
-** PROBLEM STATEMENT AND APPROACH **
+**PROBLEM STATEMENT AND APPROACH**
 Can we accurately predict system resource utilization (CPU, memory, and thread usage) based on the percentage distribution of multiple API load's within an application using regression models?
 
 Expected Data Source
