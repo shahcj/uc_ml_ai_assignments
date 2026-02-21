@@ -34,7 +34,7 @@ The following models were trained using default parameters:
 - Decision Tree
 - SVM
 
-Link to Jupyter Notebook: 
+Link to Jupyter Notebook: [Comparing_Classifiers.ipynb](https://github.com/shahcj/uc_ml_ai_assignments/blob/main/Module 17/Comparing_Classifiers.ipynb)
 
 ## Hyperparameter Tuning
 
