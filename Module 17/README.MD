@@ -34,6 +34,8 @@ The following models were trained using default parameters:
 - Decision Tree
 - SVM
 
+Link to Jupyter Notebook: 
+
 ## Hyperparameter Tuning
 
 GridSearchCV was applied to optimize model parameters using F1-score as the evaluation metric due to class imbalance.
@@ -42,7 +44,7 @@ Tuning improved model performance slightly but overall F1 scores remained limite
 
 The confusion matrix shows that models struggle to correctly classify the minority class, reinforcing the impact of class imbalance.
 
-## Conclustion
+## Conclusion
 
 1. Class imbalance significantly affects model performance.
 2. Bank client features alone provide limited predictive power.
