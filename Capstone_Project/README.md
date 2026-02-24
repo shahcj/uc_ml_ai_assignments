@@ -34,6 +34,4 @@ Thread prediction showed good performance as well (test MSE: 63.886; CV RMSE: 7.
 
 #### Outline of project
 
-- [Link to notebook 1]()
-- [Link to notebook 2]()
-- [Link to notebook 3]()
+- [Jupyter Notebook with EDA and first model](https://github.com/shahcj/uc_ml_ai_assignments/blob/main/Capstone_Project/Capstone_Project.ipynb)
