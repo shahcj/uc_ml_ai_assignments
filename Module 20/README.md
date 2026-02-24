@@ -20,7 +20,13 @@ Model Techniques: Linear regression as base model, Regularization using Lasso or
 Metrics: Coef, MSE/RMSE, Cross-validation
 
 #### Results
-The baseline Linear Regression models performed strongly for all three targets and remained consistent under 5-fold cross-validation. For CPU prediction, the model achieved very low error (test MSE: 0.122; CV RMSE: 0.352 ± 0.003), showing high accuracy and stability. Memory prediction also performed well (test MSE: 26,973.821; CV RMSE: 165.245 ± 2.115), with error magnitude reasonable given the larger MB scale from 200 to 6000 MB. So model is off by about 164 MB on average as shown by RMSE. Thread prediction showed good performance as well (test MSE: 63.886; CV RMSE: 7.971 ± 0.079). Overall, these results indicate that API-level traffic and latency features are effective predictors of system resource usage and provide a solid baseline for further model refinement.
+The baseline Linear Regression models performed strongly for all three targets and remained consistent under 5-fold cross-validation. 
+
+For CPU prediction, the model achieved very low error (test MSE: 0.122; CV RMSE: 0.352 ± 0.003), showing high accuracy and stability. 
+
+Memory prediction also performed well (test MSE: 26,973.821; CV RMSE: 165.245 ± 2.115), with error magnitude reasonable given the larger MB scale from 200 to 6000 MB. So model is off by about 164 MB on average as shown by RMSE. 
+
+Thread prediction showed good performance as well (test MSE: 63.886; CV RMSE: 7.971 ± 0.079). Overall, these results indicate that API-level traffic and latency features are effective predictors of system resource usage and provide a solid baseline for further model refinement.
 
 #### Next steps
 1. Tune regularized linear models: Ridge/Lasso with hyperparameter search (GridSearchCV) to reduce overfitting and stabilize coefficients.
