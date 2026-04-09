@@ -12,7 +12,7 @@ Performance testing is expensive and time-consuming. Capacity planning today rel
 Can we accurately predict system resource utilization (CPU, memory, and thread usage) based on the percentage distribution of multiple API load's within an application using regression models?
 
 #### Data Sources
-JMeter load test executions Monitoring tool like Argus and Grafana
+JMeter load test JTL file. It spans a 7-day period, where each row represents the average CPU usage and average heap memory percentage recorded at 5-second intervals.
 
 #### Methodology
 - Data Preparation: Clean, Normalize, Scaling etc..
