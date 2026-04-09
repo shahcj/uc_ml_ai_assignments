@@ -15,9 +15,9 @@ Can we accurately predict system resource utilization (CPU, memory, and thread u
 JMeter load test executions Monitoring tool like Argus and Grafana
 
 #### Methodology
-Data Preparation: Clean, Normalize, Scaling etc..
-Model Techniques: Linear regression as base model and compare against Random Forest Regressor 
-Metrics: Coef, MSE/RMSE, Cross-validation
+- Data Preparation: Clean, Normalize, Scaling etc..
+- Model Techniques: Linear regression as base model and compare against Random Forest Regressor 
+- Metrics: Coef, MSE/RMSE, Cross-validation
 
 #### Results
 **Linear Regression vs Random Forest Regressor**
