@@ -20,7 +20,8 @@ Model Techniques: Linear regression as base model and compare against Random For
 Metrics: Coef, MSE/RMSE, Cross-validation
 
 #### Results
-**Linear Regression vs Random Forest Regressor¶**
+**Linear Regression vs Random Forest Regressor**
+
 Random Forest achieved high accuracy on historical data, but it is primarily an interpolation model and does not extrapolate reliably beyond the throughput range seen during training. Since the target scenario involves a total throughput of ~1900, which is outside the observed data, Linear Regression provides a more meaningful estimate of CPU demand for this what-if capacity planning exercise.
 
 #### Conclusion
