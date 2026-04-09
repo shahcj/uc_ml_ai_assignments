@@ -25,8 +25,7 @@ JMeter load test executions Monitoring tool like Argus and Grafana
 - The 5-fold cross-validation result further supports this, with a mean CV RMSE of **0.645**, which is almost identical to the test RMSE. This close match indicates that the model generalizes consistently across different data splits and shows little evidence of overfitting. Overall, Linear Regression provides a reliable baseline model for estimating CPU demand from throughput.
 
 **Linear Regression vs Random Forest Regressor**
-
-Random Forest achieved high accuracy on historical data, but it is primarily an interpolation model and does not extrapolate reliably beyond the throughput range seen during training. Since the target scenario involves a total throughput of ~1900, which is outside the observed data, Linear Regression provides a more meaningful estimate of CPU demand for this what-if capacity planning exercise.
+- Random Forest achieved high accuracy on historical data, but it is primarily an interpolation model and does not extrapolate reliably beyond the throughput range seen during training. Since the target scenario involves a total throughput of ~1900, which is outside the observed data, Linear Regression provides a more meaningful estimate of CPU demand for this what-if capacity planning exercise.
 
 #### Conclusion
 Using these predictive models, we can estimate CPU requirements under different API throughput combinations without running a new performance test for every scenario. For example, if Graph API throughput increases by 50% while the other APIs stay near their average volume, the model predicts higher CPU demand and indicates that the current CPU core limit may need to be increased. This approach can also be extended to other what-if scenarios, such as peak traffic across all APIs or a significant increase in any single API, to support infrastructure sizing and capacity planning.
