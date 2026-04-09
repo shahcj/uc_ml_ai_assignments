@@ -20,6 +20,7 @@ JMeter load test JTL file. It spans a 7-day period, where each row represents th
 - Metrics: Coef, MSE/RMSE, Cross-validation
 
 #### Results
+
 **Metrics**
 - The Linear Regression model showed consistent and reasonably stable performance for CPU prediction. On the test dataset, it achieved an RMSE of **0.648** and an MSE of **0.420**, which means the model’s CPU predictions were off by about **0.65** CPU cores on average. Since the CPU range is 1 to 8, this indicates moderate prediction accuracy and suggests the model can provide useful estimates for capacity planning.
 - The 5-fold cross-validation result further supports this, with a mean CV RMSE of **0.645**, which is almost identical to the test RMSE. This close match indicates that the model generalizes consistently across different data splits and shows little evidence of overfitting. Overall, Linear Regression provides a reliable baseline model for estimating CPU demand from throughput.
