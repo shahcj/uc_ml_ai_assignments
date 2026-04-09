@@ -16,21 +16,15 @@ JMeter load test executions Monitoring tool like Argus and Grafana
 
 #### Methodology
 Data Preparation: Clean, Normalize, Scaling etc.. 
-Model Techniques: Linear regression as base model, Regularization using Lasso or Ridge, Polynomial Regression for non-linear features 
+Model Techniques: Linear regression as base model and compare against Random Forest Regressor 
 Metrics: Coef, MSE/RMSE, Cross-validation
 
 #### Results
-The baseline Linear Regression models performed strongly for all three targets and remained consistent under 5-fold cross-validation. 
+**Linear Regression vs Random Forest Regressor¶**
+Random Forest achieved high accuracy on historical data, but it is primarily an interpolation model and does not extrapolate reliably beyond the throughput range seen during training. Since the target scenario involves a total throughput of ~1900, which is outside the observed data, Linear Regression provides a more meaningful estimate of CPU demand for this what-if capacity planning exercise.
 
-For CPU prediction, the model achieved very low error (test MSE: 0.122; CV RMSE: 0.352 ± 0.003), showing high accuracy and stability. 
-
-Memory prediction also performed well (test MSE: 26,973.821; CV RMSE: 165.245 ± 2.115), with error magnitude reasonable given the larger MB scale from 200 to 6000 MB. So model is off by about 164 MB on average as shown by RMSE. 
-
-Thread prediction showed good performance as well (test MSE: 63.886; CV RMSE: 7.971 ± 0.079). Overall, these results indicate that API-level traffic and latency features are effective predictors of system resource usage and provide a solid baseline for further model refinement.
-
-#### Next steps
-1. Tune regularized linear models: Ridge/Lasso with hyperparameter search (GridSearchCV) to reduce overfitting and stabilize coefficients.
-2. Add more scenarios: low/high traffic phases, burst behavior, deployment windows, failures/retries. This will help to test the model for different edge cases.
+#### Conclusion
+Using these predictive models, we can estimate CPU requirements under different API throughput combinations without running a new performance test for every scenario. For example, if Graph API throughput increases by 50% while the other APIs stay near their average volume, the model predicts higher CPU demand and indicates that the current CPU core limit may need to be increased. This approach can also be extended to other what-if scenarios, such as peak traffic across all APIs or a significant increase in any single API, to support infrastructure sizing and capacity planning.
 
 #### Outline of project
 
