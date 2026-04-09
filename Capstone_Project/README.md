@@ -33,3 +33,4 @@ Using these predictive models, we can estimate CPU requirements under different 
 #### Outline of project
 
 - [Jupyter Notebook with EDA and first model](https://github.com/shahcj/uc_ml_ai_assignments/blob/main/Capstone_Project/Capstone_Project.ipynb)
+- [Test Data](https://github.com/shahcj/uc_ml_ai_assignments/blob/main/Capstone_Project/api_perf_metrics.csv)
